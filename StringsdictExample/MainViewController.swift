@@ -95,17 +95,7 @@ extension MainViewController {
     }
     
     @objc private func didTapTrash() {
-        var title = ""
-        
-        if selectedTowns.isEmpty {
-            title = NSLocalizedString("EMPTY_TOWNS_SELECTION", comment: "")
-        } else if selectedTowns.count == 1 {
-            title = NSLocalizedString("ONE_TOWN_SELECTION", comment: "")
-        } else {
-            title = String(format: NSLocalizedString("MULTIPLE_TOWNS_SELECTION", comment: ""), selectedTowns.count)
-        }
-        
-        showAlertSheet(title: title) { [weak self] in
+        showAlertSheet(itemsCount: selectedTowns.count) { [weak self] in
             guard let self = self else { return }
             self.deleteTowns(self.selectedTowns)
         }

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		7A64DE3326E68EF1003BB9A8 /* UIViewController+Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A64DE3226E68EF1003BB9A8 /* UIViewController+Alert.swift */; };
+		7A64DE3526E71D38003BB9A8 /* Localizable.stringsdict in Resources */ = {isa = PBXBuildFile; fileRef = 7A64DE3426E71D38003BB9A8 /* Localizable.stringsdict */; };
 		7ABA7BD526E1AE0400B15D21 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ABA7BD426E1AE0400B15D21 /* AppDelegate.swift */; };
 		7ABA7BD726E1AE0400B15D21 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ABA7BD626E1AE0400B15D21 /* SceneDelegate.swift */; };
 		7ABA7BD926E1AE0400B15D21 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ABA7BD826E1AE0400B15D21 /* MainViewController.swift */; };
@@ -20,6 +21,7 @@
 
 /* Begin PBXFileReference section */
 		7A64DE3226E68EF1003BB9A8 /* UIViewController+Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Alert.swift"; sourceTree = "<group>"; };
+		7A64DE3426E71D38003BB9A8 /* Localizable.stringsdict */ = {isa = PBXFileReference; lastKnownFileType = text.plist.stringsdict; path = Localizable.stringsdict; sourceTree = "<group>"; };
 		7ABA7BD126E1AE0400B15D21 /* StringsdictExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StringsdictExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7ABA7BD426E1AE0400B15D21 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7ABA7BD626E1AE0400B15D21 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -72,6 +74,7 @@
 				7ABA7BEA26E1B25600B15D21 /* UIBarButtonItem+Extension.swift */,
 				7ABA7BEC26E1D7AC00B15D21 /* Localizable.strings */,
 				7A64DE3226E68EF1003BB9A8 /* UIViewController+Alert.swift */,
+				7A64DE3426E71D38003BB9A8 /* Localizable.stringsdict */,
 			);
 			path = StringsdictExample;
 			sourceTree = "<group>";
@@ -134,6 +137,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7ABA7BE126E1AE0500B15D21 /* LaunchScreen.storyboard in Resources */,
+				7A64DE3526E71D38003BB9A8 /* Localizable.stringsdict in Resources */,
 				7ABA7BED26E1D7AC00B15D21 /* Localizable.strings in Resources */,
 				7ABA7BDE26E1AE0500B15D21 /* Assets.xcassets in Resources */,
 			);

@@ -9,17 +9,21 @@ import UIKit
 
 extension UIViewController {
     
-    func showAlertSheet(title: String, deleteAction: @escaping () -> Void) {
+    func showAlertSheet(itemsCount: Int, deleteAction: @escaping () -> Void) {
         let alertController = UIAlertController(title: nil, message: nil, preferredStyle: .actionSheet)
-
-        let action = UIAlertAction(title: title, style: .destructive) { [weak self] _ in
+        
+        let formatString : String = NSLocalizedString("ACTION_SHEET_MESSAGE",
+                                                      comment: "Number of towns to delete in plural configuration")
+        let resultString = String.localizedStringWithFormat(formatString, itemsCount)
+        
+        let action1 = UIAlertAction(title: resultString, style: .destructive) { [weak self] _ in
             guard let self = self else { return }
             deleteAction()
             self.setEditing(false, animated: true)
         }
         let closeAction = UIAlertAction(title: NSLocalizedString("ALERT_CANCEL_TITLE", comment: ""), style: .cancel, handler: nil)
         
-        alertController.addAction(action)
+        alertController.addAction(action1)
         alertController.addAction(closeAction)
         self.present(alertController, animated: true, completion: nil)
     }
