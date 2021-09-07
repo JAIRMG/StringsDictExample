@@ -1,0 +1,14 @@
+/* 
+  Localizable.strings
+  StringsdictExample
+
+  Created by Jair Moreno Gaspar on 02/09/21.
+  
+*/
+
+"MAIN_NAV_SELECT_ALL" = "Select all";
+"ALERT_CANCEL_TITLE" = "Cancel";
+
+"EMPTY_TOWNS_SELECTION" = "No town selected";
+"ONE_TOWN_SELECTION" = "Delete 1 town";
+"MULTIPLE_TOWNS_SELECTION" = "Delete %d towns";
